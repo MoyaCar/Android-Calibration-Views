@@ -11,27 +11,43 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="Cargar"
-            android:onClick="modoManualFlagColor"/>
+
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
             android:hint="Nº Sobre"
-            android:inputType="number" />
+            android:inputType="number"
+            android:background="@color/buttonBackground"
+            android:textSize="24sp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            />
+        <TextView
+            android:id="@+id/cargar_tv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Cargar"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:background="@color/buttonBackground2"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+            android:id="@+id/descargar_tv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Descargar"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:background="@color/buttonBackground3"
+            android:textColor="@color/textColor"/>
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="Descargar" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -40,11 +56,7 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="Home" />
+
 
 
     </LinearLayout>
@@ -70,7 +82,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Modo Manual"
                     android:textSize="16sp"
@@ -83,7 +95,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Homing Rodete"
                     android:textSize="16sp"
@@ -96,7 +108,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Homing Vertical"
                     android:textSize="16sp"
@@ -109,9 +121,9 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
-                    android:text="Homing horizontal"
+                    android:text="Homing Horizontal"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -122,7 +134,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Movimiento Rodete"
                     android:textSize="16sp"
@@ -135,7 +147,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Movimiento Vertical"
                     android:textSize="16sp"
@@ -148,7 +160,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Movimiento Horizontal"
                     android:textSize="16sp"
@@ -161,7 +173,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Movimiento Rodillos"
                     android:textSize="16sp"
@@ -174,7 +186,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Extacción"
                     android:textSize="16sp"
@@ -187,7 +199,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Carga"
                     android:textSize="16sp"
@@ -201,7 +213,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Sobre en Presentador"
                     android:textSize="16sp"
@@ -214,7 +226,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Extracción Exitosa"
                     android:textSize="16sp"
@@ -227,7 +239,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Carga Exitosa"
                     android:textSize="16sp"
@@ -240,7 +252,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Ciclos"
                     android:textSize="16sp"
@@ -253,7 +265,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Homing"
                     android:textSize="16sp"
@@ -266,7 +278,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="32dp"
-                    android:background="@color/rojoflag"
+                    android:textColor="@color/inactiveFlag"
                     android:gravity="center"
                     android:text="Presentador Listo"
                     android:textSize="16sp"
@@ -281,10 +293,14 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Desconectar"
-            android:layout_margin="8dp"/>
+    <TextView
+        android:id="@+id/desconectar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Desconectar"
+        android:gravity="center"
+        android:background="@color/buttonBackground2"
+        android:textSize="24sp"
+        android:textColor="@color/textColor"/>
     </LinearLayout>
 </LinearLayout>
