@@ -26,6 +26,7 @@
             android:textSize="24sp"
             android:textColor="@color/textColor"
             android:textColorHint="@color/textColor"
+            android:maxLength="2"
             />
         <TextView
             android:id="@+id/cargar_tv"
